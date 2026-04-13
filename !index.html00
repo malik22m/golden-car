@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golden Car | شركة فحص سيارات</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+font-family:'Cairo',sans-serif;
+background:#050814;
+color:#fff;
+}
+
+/* TOP */
+.top{
+position:fixed;
+top:0;
+width:100%;
+background:#facc15;
+color:#000;
+text-align:center;
+padding:8px;
+font-weight:900;
+z-index:9999;
+}
+
+body{padding-top:40px;}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
+position:sticky;
+top:40px;
+}
+
+.logo{
+color:#facc15;
+font-weight:900;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin:0 10px;
+opacity:0.8;
+}
+
+nav a:hover{color:#facc15;opacity:1}
+
+/* HERO IMAGE */
+.hero{
+text-align:center;
+padding:100px 20px;
+position:relative;
+}
+
+.hero img{
+width:100%;
+max-width:900px;
+border-radius:20px;
+margin-top:20px;
+box-shadow:0 0 30px rgba(250,204,21,0.2);
+}
+
+.hero h1{
+color:#facc15;
+font-size:40px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 20px;
+background:#facc15;
+color:#000;
+font-weight:900;
+border-radius:10px;
+text-decoration:none;
+}
+
+/* SECTIONS */
+section{
+padding:70px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+h2{
+color:#facc15;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:20px;
+border-radius:12px;
+border:1px solid rgba(255,255,255,0.1);
+}
+
+/* TESTIMONIALS */
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.review{
+background:rgba(255,255,255,0.05);
+padding:20px;
+border-radius:12px;
+border-left:3px solid #facc15;
+}
+
+/* WHATSAPP */
+.wa{
+position:fixed;
+bottom:20px;
+left:20px;
+background:#25D366;
+padding:15px 18px;
+border-radius:50px;
+color:#fff;
+font-weight:900;
+text-decoration:none;
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.1)}
+100%{transform:scale(1)}
+}
+</style>
+</head>
+
+<body>
+
+<div class="top">
+⚡ خصم خاص اليوم على فحص السيارات في Golden Car ⚡
+</div>
+
+<header>
+<div class="logo">Golden Car</div>
+<nav>
+<a href="#services">الخدمات</a>
+<a href="#about">من نحن</a>
+<a href="#reviews">آراء العملاء</a>
+<a href="#contact">تواصل</a>
+</nav>
+</header>
+
+<!-- HERO WITH IMAGE -->
+<section class="hero">
+<h1>Golden Car</h1>
+<p>شركة فحص سيارات احترافية في حمص</p>
+
+<!-- صورة الشركة -->
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Golden Car Garage">
+
+<a class="btn" href="#contact">احجز الآن</a>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+<h2>خدماتنا</h2>
+<div class="grid">
+<div class="card">🚗 فحص كمبيوتر</div>
+<div class="card">⚙️ داينو</div>
+<div class="card">🛑 فرامل</div>
+<div class="card">🎨 كشف طلاء</div>
+<div class="card">🔧 تشخيص</div>
+<div class="card">📊 تقرير كامل</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>من نحن</h2>
+<div class="card">
+نحن Golden Car في حمص نقدم فحص سيارات احترافي بأحدث الأجهزة وتقارير دقيقة وموثوقة.
+</div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+<h2>آراء العملاء</h2>
+
+<div class="testimonials">
+
+<div class="review">
+⭐⭐⭐⭐⭐<br>
+“فحص دقيق جدًا كشف لي مشكلة ما كنت أعرفها. أنقذوني من شراء سيارة مضروبة.”
+<br><b>- أحمد</b>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐<br>
+“خدمة احترافية وتعامل ممتاز، التقرير كان واضح جدًا.”
+<br><b>- محمد</b>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐<br>
+“أفضل مركز فحص في حمص بدون مبالغة.”
+<br><b>- خالد</b>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>تواصل معنا</h2>
+<div class="card">
+📞 0997 118 428<br><br>
+📍 حمص - شارع القاهرة<br><br>
+
+<a class="btn" href="https://wa.me/963997118428?text=أريد%20حجز%20فحص">واتساب</a>
+<a class="btn" href="https://maps.google.com">الموقع</a>
+</div>
+</section>
+
+<!-- WHATSAPP -->
+<a class="wa" href="https://wa.me/963997118428?text=حجز%20فحص">
+📩 احجز الآن
+</a>
+
+</body>
+</html>
